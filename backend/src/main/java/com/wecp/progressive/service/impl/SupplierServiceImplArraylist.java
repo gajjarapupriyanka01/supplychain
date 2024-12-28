@@ -28,6 +28,7 @@ public class SupplierServiceImplArraylist implements SupplierService {
     public List<Supplier> getAllSuppliersSortedByName() {
         // TODO Auto-generated method stub
         List<Supplier> sortSupplier=supplierList;
+        List<Supplier> sortedSupplier;
         sortedSupplier.sort(Comparator.comparing(Supplier::getSupplierName));
         return sortedSupplier;
 
