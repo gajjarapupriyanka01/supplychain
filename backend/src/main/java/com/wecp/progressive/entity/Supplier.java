@@ -6,16 +6,20 @@ public class Supplier {
     private String contactEmail;
     private String contactPhone;
     private String address;
+    private String username;
+    private String password;
     private String role;
     public Supplier() {
     }
     public Supplier(int supplierId, String supplierName, String contactEmail, String contactPhone, String address,
-            String role) {
+            String username, String password, String role) {
         this.supplierId = supplierId;
         this.supplierName = supplierName;
         this.contactEmail = contactEmail;
         this.contactPhone = contactPhone;
         this.address = address;
+        this.username = username;
+        this.password = password;
         this.role = role;
     }
     public int getSupplierId() {
@@ -48,13 +52,23 @@ public class Supplier {
     public void setAddress(String address) {
         this.address = address;
     }
+    public String getUsername() {
+        return username;
+    }
+    public void setUsername(String username) {
+        this.username = username;
+    }
+    public String getPassword() {
+        return password;
+    }
+    public void setPassword(String password) {
+        this.password = password;
+    }
     public String getRole() {
         return role;
     }
     public void setRole(String role) {
         this.role = role;
     }
-
     
-
 }

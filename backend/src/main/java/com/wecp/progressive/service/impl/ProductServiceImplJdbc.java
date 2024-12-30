@@ -9,7 +9,7 @@ public class ProductServiceImplJdbc implements ProductService {
 
     @Override
     public List<Product> getAllProducts() {
-        // TODO Auto-generated method stub
+       
         throw new UnsupportedOperationException("Unimplemented method 'getAllProducts'");
     }
 
@@ -21,19 +21,19 @@ public class ProductServiceImplJdbc implements ProductService {
 
     @Override
     public int addProduct(Product product) {
-        // TODO Auto-generated method stub
+       
         throw new UnsupportedOperationException("Unimplemented method 'addProduct'");
     }
 
     @Override
     public void updateProduct(Product product) {
-        // TODO Auto-generated method stub
+        
         throw new UnsupportedOperationException("Unimplemented method 'updateProduct'");
     }
 
     @Override
     public void deleteProduct(int productId) {
-        // TODO Auto-generated method stub
+        
         throw new UnsupportedOperationException("Unimplemented method 'deleteProduct'");
     }
 

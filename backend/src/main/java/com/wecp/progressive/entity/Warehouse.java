@@ -49,7 +49,7 @@ public class Warehouse implements Comparable<Warehouse>{
     @Override
     public int compareTo(Warehouse otherWarehouse) {
         return Double.compare(otherWarehouse.getCapacity(),this.getCapacity());
-        // TODO Auto-generated method stub
+        
         
     }
 

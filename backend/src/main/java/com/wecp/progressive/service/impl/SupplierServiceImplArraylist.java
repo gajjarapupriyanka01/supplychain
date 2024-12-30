@@ -12,7 +12,7 @@ public class SupplierServiceImplArraylist implements SupplierService {
 
     @Override
     public List<Supplier> getAllSuppliers() {
-        // TODO Auto-generated method stub
+       
        return supplierList;
     }
 
@@ -20,13 +20,13 @@ public class SupplierServiceImplArraylist implements SupplierService {
     public int addSupplier(Supplier supplier) {
         supplierList.add(supplier);
         return supplierList.size();
-        // TODO Auto-generated method stub
+       
         
     }
 
     @Override
     public List<Supplier> getAllSuppliersSortedByName() {
-        // TODO Auto-generated method stub
+       
         List<Supplier> sortSupplier=supplierList;
         List<Supplier> sortedSupplier;
         sortedSupplier.sort(Comparator.comparing(Supplier::getSupplierName));
