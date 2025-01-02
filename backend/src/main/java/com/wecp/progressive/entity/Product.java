@@ -1,4 +1,5 @@
 package com.wecp.progressive.entity;
+<<<<<<< HEAD
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -21,6 +22,19 @@ public class Product  {
     double price) {
         this.productId = productId;
         this.warehouseId = warehouseId;
+=======
+ 
+public class Product {
+    private int productId;
+    private String productName;
+    private String productDescription;
+    private int quantity;
+    private double price;
+    public Product() {
+    }
+    public Product(int productId, String productName, String productDescription, int quantity, double price) {
+        this.productId = productId;
+>>>>>>> 9c892efc1c820eb2825dfd9f848d6e3c1d2f1a6f
         this.productName = productName;
         this.productDescription = productDescription;
         this.quantity = quantity;
@@ -32,12 +46,15 @@ public class Product  {
     public void setProductId(int productId) {
         this.productId = productId;
     }
+<<<<<<< HEAD
     public int getWarehouseId() {
         return warehouseId;
     }
     public void setWarehouseId(int warehouseId) {
         this.warehouseId = warehouseId;
     }
+=======
+>>>>>>> 9c892efc1c820eb2825dfd9f848d6e3c1d2f1a6f
     public String getProductName() {
         return productName;
     }
@@ -59,6 +76,7 @@ public class Product  {
     public double getPrice() {
         return price;
     }
+<<<<<<< HEAD
     public void setPrice(Long price) {
         this.price = price;
     }
@@ -66,4 +84,12 @@ public class Product  {
 
 
     
+=======
+    public void setPrice(double price) {
+        this.price = price;
+    }
+   
+ 
+ 
+>>>>>>> 9c892efc1c820eb2825dfd9f848d6e3c1d2f1a6f
 }

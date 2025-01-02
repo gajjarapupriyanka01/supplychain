@@ -1,5 +1,6 @@
 package com.wecp.progressive.service.impl;
 
+<<<<<<< HEAD
 import com.wecp.progressive.dao.SupplierDAO;
 import com.wecp.progressive.entity.Supplier;
 import com.wecp.progressive.service.SupplierService;
@@ -49,4 +50,31 @@ public class SupplierServiceImplJdbc implements SupplierService {
     public Supplier getSupplierById(int supplierId) throws SQLException {
         return supplierDAO.getSupplierById(supplierId);
     }
+=======
+import java.util.List;
+
+import com.wecp.progressive.entity.Supplier;
+import com.wecp.progressive.service.SupplierService;
+
+public class SupplierServiceImplJdbc  implements SupplierService {
+
+    @Override
+    public List<Supplier> getAllSuppliers() {
+        
+        throw new UnsupportedOperationException("Unimplemented method 'getAllSuppliers'");
+    }
+
+    @Override
+    public int addSupplier(Supplier supplier) {
+    
+        throw new UnsupportedOperationException("Unimplemented method 'addSupplier'");
+    }
+
+    @Override
+    public List<Supplier> getAllSuppliersSortedByName() {
+       
+        throw new UnsupportedOperationException("Unimplemented method 'getAllSuppliersSortedByName'");
+    }
+
+>>>>>>> 9c892efc1c820eb2825dfd9f848d6e3c1d2f1a6f
 }
