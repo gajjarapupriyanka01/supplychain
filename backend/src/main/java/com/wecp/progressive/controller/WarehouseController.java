@@ -31,8 +31,4 @@ public class WarehouseController {
     public ResponseEntity<List<Warehouse>> getWarehousesBySupplier(int supplierId) {
         return null;
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 9c892efc1c820eb2825dfd9f848d6e3c1d2f1a6f

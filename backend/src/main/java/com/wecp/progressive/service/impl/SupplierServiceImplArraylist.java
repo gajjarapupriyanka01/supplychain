@@ -26,7 +26,7 @@ public class SupplierServiceImplArraylist implements SupplierService {
     }
 
     @Override
-    public List<Supplier> getAllSuppliers() {
+    public  List<Supplier> getAllSuppliers() {
         return supplierList;
     }
 
@@ -34,16 +34,10 @@ public class SupplierServiceImplArraylist implements SupplierService {
     public int addSupplier(Supplier supplier) {
         supplierList.add(supplier);
         return supplierList.size();
-<<<<<<< HEAD
-=======
-       
-        
->>>>>>> 9c892efc1c820eb2825dfd9f848d6e3c1d2f1a6f
     }
 
     @Override
     public List<Supplier> getAllSuppliersSortedByName() {
-<<<<<<< HEAD
         List<Supplier> sortedSupplier = supplierList;
         sortedSupplier.sort(Comparator.comparing(Supplier::getSupplierName)); 
         return sortedSupplier;
@@ -54,18 +48,4 @@ public class SupplierServiceImplArraylist implements SupplierService {
     public void emptyArrayList() {
         supplierList = new ArrayList<>();
     }
-=======
-       
-        List<Supplier> sortSupplier=supplierList;
-        List<Supplier> sortedSupplier;
-        sortedSupplier.sort(Comparator.comparing(Supplier::getSupplierName));
-        return sortedSupplier;
-
-    }
-    @Override
-    public void emptyArrayList(){
-        supplierList=newArrayList<>();
-    }
-
->>>>>>> 9c892efc1c820eb2825dfd9f848d6e3c1d2f1a6f
 }
