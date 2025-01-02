@@ -1,6 +1,5 @@
 package com.wecp.progressive.service.impl;
 
-<<<<<<< HEAD
 import com.wecp.progressive.dao.SupplierDAO;
 import com.wecp.progressive.entity.Supplier;
 import com.wecp.progressive.service.SupplierService;
@@ -29,22 +28,6 @@ public class SupplierServiceImplArraylist implements SupplierService {
     @Override
     public List<Supplier> getAllSuppliers() {
         return supplierList;
-=======
-import java.util.ArrayList;
-import java.util.List;
-
-import com.wecp.progressive.entity.Supplier;
-import com.wecp.progressive.service.SupplierService;
-
-public class SupplierServiceImplArraylist implements SupplierService {
-    private static List<Supplier> supplierList=new ArrayList<>();
-
-
-    @Override
-    public List<Supplier> getAllSuppliers() {
-       
-       return supplierList;
->>>>>>> 9c892efc1c820eb2825dfd9f848d6e3c1d2f1a6f
     }
 
     @Override
